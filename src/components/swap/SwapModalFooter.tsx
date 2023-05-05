@@ -1,7 +1,7 @@
 import { Trans } from '@lingui/macro'
-import { TraceEvent } from '@uniswap/analytics'
-import { BrowserEvent, InterfaceElementName, SwapEventName } from '@uniswap/analytics-events'
-import { Currency, Percent, TradeType } from '@uniswap/sdk-core'
+import { TraceEvent } from '@mageswap/analytics'
+import { BrowserEvent, InterfaceElementName, SwapEventName } from '@mageswap/analytics-events'
+import { Currency, Percent, TradeType } from '@mageswap/sdk-core'
 import useTransactionDeadline from 'hooks/useTransactionDeadline'
 import {
   formatPercentInBasisPointsNumber,

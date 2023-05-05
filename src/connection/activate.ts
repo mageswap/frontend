@@ -1,5 +1,5 @@
-import { sendAnalyticsEvent } from '@uniswap/analytics'
-import { InterfaceEventName, WalletConnectionResult } from '@uniswap/analytics-events'
+import { sendAnalyticsEvent } from '@mageswap/analytics'
+import { InterfaceEventName, WalletConnectionResult } from '@mageswap/analytics-events'
 import { Connection } from 'connection/types'
 import { atom } from 'jotai'
 import { useAtomValue, useUpdateAtom } from 'jotai/utils'

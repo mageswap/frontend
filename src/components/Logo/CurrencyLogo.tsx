@@ -1,5 +1,5 @@
-import { Currency } from '@uniswap/sdk-core'
-import { TokenInfo } from '@uniswap/token-lists'
+import { Currency } from '@mageswap/sdk-core'
+import { TokenInfo } from '@mageswap/token-lists'
 
 import AssetLogo, { AssetLogoBaseProps } from './AssetLogo'
 

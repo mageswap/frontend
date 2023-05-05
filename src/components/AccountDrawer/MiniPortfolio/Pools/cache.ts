@@ -1,5 +1,5 @@
-import { Token } from '@uniswap/sdk-core'
-import { Pool, Position } from '@uniswap/v3-sdk'
+import { Token } from '@mageswap/sdk-core'
+import { Pool, Position } from '@mageswap/v3-sdk'
 import { SupportedChainId } from 'constants/chains'
 import { useAllTokensMultichain } from 'hooks/Tokens'
 import { atom, useAtom } from 'jotai'

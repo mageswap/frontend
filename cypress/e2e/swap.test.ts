@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { parseEther } from '@ethersproject/units'
-import { SupportedChainId, WETH9 } from '@uniswap/sdk-core'
+import { SupportedChainId, WETH9 } from '@mageswap/sdk-core'
 
 import { UNI as UNI_MAINNET, USDC_MAINNET } from '../../src/constants/tokens'
 import { FeatureFlag } from '../../src/featureFlags/flags/featureFlags'

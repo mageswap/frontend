@@ -1,6 +1,6 @@
 import { arrayify } from '@ethersproject/bytes'
 import { parseBytes32String } from '@ethersproject/strings'
-import { Currency, Token } from '@uniswap/sdk-core'
+import { Currency, Token } from '@mageswap/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import { isSupportedChain, SupportedChainId } from 'constants/chains'
 import { useBytes32TokenContract, useTokenContract } from 'hooks/useContract'

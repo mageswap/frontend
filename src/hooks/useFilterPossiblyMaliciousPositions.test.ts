@@ -1,5 +1,5 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { CallState } from '@uniswap/redux-multicall'
+import { CallState } from '@mageswap/redux-multicall'
 import { renderHook } from 'test-utils/render'
 import { PositionDetails } from 'types/position'
 

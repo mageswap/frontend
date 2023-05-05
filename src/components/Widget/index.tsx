@@ -1,12 +1,12 @@
-import { sendAnalyticsEvent, useTrace } from '@uniswap/analytics'
+import { sendAnalyticsEvent, useTrace } from '@mageswap/analytics'
 import {
   InterfaceEventName,
   InterfaceSectionName,
   SwapEventName,
   SwapPriceUpdateUserResponse,
-} from '@uniswap/analytics-events'
-import { Trade } from '@uniswap/router-sdk'
-import { Currency, TradeType } from '@uniswap/sdk-core'
+} from '@mageswap/analytics-events'
+import { Trade } from '@mageswap/router-sdk'
+import { Currency, TradeType } from '@mageswap/sdk-core'
 import {
   AddEthereumChainParameter,
   DialogAnimationType,
@@ -14,7 +14,7 @@ import {
   OnReviewSwapClick,
   SwapWidget,
   SwapWidgetSkeleton,
-} from '@uniswap/widgets'
+} from '@mageswap/widgets'
 import { useWeb3React } from '@web3-react/core'
 import { useToggleAccountDrawer } from 'components/AccountDrawer'
 import { useActiveLocale } from 'hooks/useActiveLocale'

@@ -1,5 +1,5 @@
-import { getDeviceId, sendAnalyticsEvent, Trace, user } from '@uniswap/analytics'
-import { CustomUserProperties, getBrowser, InterfacePageName, SharedEventName } from '@uniswap/analytics-events'
+import { getDeviceId, sendAnalyticsEvent, Trace, user } from '@mageswap/analytics'
+import { CustomUserProperties, getBrowser, InterfacePageName, SharedEventName } from '@mageswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'
 import Loader from 'components/Icons/LoadingSpinner'
 import TopLevelModals from 'components/TopLevelModals'

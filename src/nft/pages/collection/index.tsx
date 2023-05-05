@@ -1,5 +1,5 @@
-import { Trace } from '@uniswap/analytics'
-import { InterfacePageName } from '@uniswap/analytics-events'
+import { Trace } from '@mageswap/analytics'
+import { InterfacePageName } from '@mageswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'
 import Column from 'components/Column'
 import { OpacityHoverState } from 'components/Common'

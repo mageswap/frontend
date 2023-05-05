@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@mageswap/sdk-core'
 import { NATIVE_CHAIN_ID } from 'constants/tokens'
 import { chainIdToBackendName } from 'graphql/data/util'
 import { useOnClickOutside } from 'hooks/useOnClickOutside'
@@ -81,7 +81,7 @@ export default function ShareButton({ currency }: { currency: Currency }) {
         currency.symbol
       })%20https://app.uniswap.org/%23/tokens/${chainIdToBackendName(
         currency.chainId
-      ).toLowerCase()}/${address}%20via%20@uniswap`,
+      ).toLowerCase()}/${address}%20via%20@mageswap`,
       'newwindow',
       `left=${positionX}, top=${positionY}, width=${TWITTER_WIDTH}, height=${TWITTER_HEIGHT}`
     )

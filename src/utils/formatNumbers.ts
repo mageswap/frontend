@@ -1,5 +1,5 @@
 /* Copied from Uniswap/v-3: https://github.com/Uniswap/v3-info/blob/master/src/utils/numbers.ts */
-import { Currency, CurrencyAmount, Price } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount, Price } from '@mageswap/sdk-core'
 import { DEFAULT_LOCALE } from 'constants/locales'
 import numbro from 'numbro'
 

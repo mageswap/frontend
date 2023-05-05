@@ -1,6 +1,6 @@
-import { CurrencyAmount, Percent, Token, TradeType } from '@uniswap/sdk-core'
-import { V3Route } from '@uniswap/smart-order-router'
-import { FeeAmount, Pool } from '@uniswap/v3-sdk'
+import { CurrencyAmount, Percent, Token, TradeType } from '@mageswap/sdk-core'
+import { V3Route } from '@mageswap/smart-order-router'
+import { FeeAmount, Pool } from '@mageswap/v3-sdk'
 import JSBI from 'jsbi'
 import { InterfaceTrade } from 'state/routing/types'
 

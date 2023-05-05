@@ -1,5 +1,5 @@
-import type { TokenList } from '@uniswap/token-lists'
-import { validateTokenList } from '@uniswap/widgets'
+import type { TokenList } from '@mageswap/token-lists'
+import { validateTokenList } from '@mageswap/widgets'
 import contenthashToUri from 'lib/utils/contenthashToUri'
 import parseENSAddress from 'lib/utils/parseENSAddress'
 import uriToHttp from 'lib/utils/uriToHttp'

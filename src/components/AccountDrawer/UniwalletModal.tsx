@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { sendAnalyticsEvent } from '@uniswap/analytics'
-import { InterfaceElementName } from '@uniswap/analytics-events'
+import { sendAnalyticsEvent } from '@mageswap/analytics'
+import { InterfaceElementName } from '@mageswap/analytics-events'
 import { WalletConnect } from '@web3-react/walletconnect'
 import Column, { AutoColumn } from 'components/Column'
 import Modal from 'components/Modal'

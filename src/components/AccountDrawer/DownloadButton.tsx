@@ -1,5 +1,5 @@
-import { sendAnalyticsEvent } from '@uniswap/analytics'
-import { InterfaceElementName, InterfaceEventName, SharedEventName } from '@uniswap/analytics-events'
+import { sendAnalyticsEvent } from '@mageswap/analytics'
+import { InterfaceElementName, InterfaceEventName, SharedEventName } from '@mageswap/analytics-events'
 import { PropsWithChildren, useCallback } from 'react'
 import styled from 'styled-components/macro'
 import { ClickableStyle } from 'theme'

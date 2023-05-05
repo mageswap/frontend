@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { TraceEvent } from '@uniswap/analytics'
-import { BrowserEvent, InterfaceElementName, SharedEventName } from '@uniswap/analytics-events'
+import { TraceEvent } from '@mageswap/analytics'
+import { BrowserEvent, InterfaceElementName, SharedEventName } from '@mageswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'
 import { useAccountDrawer } from 'components/AccountDrawer'
 import { ButtonText } from 'components/Button'

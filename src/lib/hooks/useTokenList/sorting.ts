@@ -1,5 +1,5 @@
-import { Currency, CurrencyAmount, Token } from '@uniswap/sdk-core'
-import { TokenInfo } from '@uniswap/token-lists'
+import { Currency, CurrencyAmount, Token } from '@mageswap/sdk-core'
+import { TokenInfo } from '@mageswap/token-lists'
 import { useMemo } from 'react'
 
 /** Sorts currency amounts (descending). */

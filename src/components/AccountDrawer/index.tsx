@@ -1,5 +1,5 @@
-import { TraceEvent } from '@uniswap/analytics'
-import { BrowserEvent, InterfaceEventName } from '@uniswap/analytics-events'
+import { TraceEvent } from '@mageswap/analytics'
+import { BrowserEvent, InterfaceEventName } from '@mageswap/analytics-events'
 import { ScrollBarStyles } from 'components/Common'
 import { useWindowSize } from 'hooks/useWindowSize'
 import { atom } from 'jotai'

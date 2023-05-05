@@ -1,5 +1,5 @@
-import { FACTORY_ADDRESS as V2_FACTORY_ADDRESS } from '@uniswap/v2-sdk'
-import { FACTORY_ADDRESS as V3_FACTORY_ADDRESS } from '@uniswap/v3-sdk'
+import { FACTORY_ADDRESS as V2_FACTORY_ADDRESS } from '@mageswap/v2-sdk'
+import { FACTORY_ADDRESS as V3_FACTORY_ADDRESS } from '@mageswap/v3-sdk'
 
 import { SupportedChainId } from './chains'
 

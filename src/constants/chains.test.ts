@@ -1,4 +1,4 @@
-import { SupportedChainId as SdkSupportedChainId } from '@uniswap/sdk-core'
+import { SupportedChainId as SdkSupportedChainId } from '@mageswap/sdk-core'
 
 import { ALL_SUPPORTED_CHAIN_IDS, SupportedChainId } from './chains'
 

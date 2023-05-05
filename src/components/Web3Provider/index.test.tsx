@@ -1,6 +1,6 @@
 import { act, render } from '@testing-library/react'
-import { sendAnalyticsEvent, user } from '@uniswap/analytics'
-import { InterfaceEventName, WalletConnectionResult } from '@uniswap/analytics-events'
+import { sendAnalyticsEvent, user } from '@mageswap/analytics'
+import { InterfaceEventName, WalletConnectionResult } from '@mageswap/analytics-events'
 import { initializeConnector, MockEIP1193Provider } from '@web3-react/core'
 import { EIP1193 } from '@web3-react/eip1193'
 import { Provider as EIP1193Provider } from '@web3-react/types'
@@ -14,7 +14,7 @@ import { mocked } from 'test-utils/mocked'
 
 import Web3Provider from '.'
 
-jest.mock('@uniswap/analytics', () => ({
+jest.mock('@mageswap/analytics', () => ({
   sendAnalyticsEvent: jest.fn(),
   user: { set: jest.fn(), postInsert: jest.fn() },
 }))

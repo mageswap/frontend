@@ -1,5 +1,5 @@
-import { TraceEvent } from '@uniswap/analytics'
-import { BrowserEvent, InterfaceElementName, InterfaceEventName } from '@uniswap/analytics-events'
+import { TraceEvent } from '@mageswap/analytics'
+import { BrowserEvent, InterfaceElementName, InterfaceEventName } from '@mageswap/analytics-events'
 import { useCloseAccountDrawer } from 'components/AccountDrawer'
 import Loader from 'components/Icons/LoadingSpinner'
 import { ActivationStatus, useActivationState } from 'connection/activate'

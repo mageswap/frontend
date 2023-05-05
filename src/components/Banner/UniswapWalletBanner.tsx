@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { InterfaceElementName } from '@uniswap/analytics-events'
+import { InterfaceElementName } from '@mageswap/analytics-events'
 import walletBannerPhoneImageSrc from 'assets/images/wallet_banner_phone_image.png'
 import { ReactComponent as AppleLogo } from 'assets/svg/apple_logo.svg'
 import { openDownloadApp, openWalletMicrosite } from 'components/AccountDrawer/DownloadButton'

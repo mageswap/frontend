@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { Trace, TraceEvent } from '@uniswap/analytics'
-import { BrowserEvent, InterfaceElementName, InterfaceSectionName, SharedEventName } from '@uniswap/analytics-events'
+import { Trace, TraceEvent } from '@mageswap/analytics'
+import { BrowserEvent, InterfaceElementName, InterfaceSectionName, SharedEventName } from '@mageswap/analytics-events'
 import Column from 'components/Column'
 import { AutoRow } from 'components/Row'
 import { useIsNftPage } from 'hooks/useIsNftPage'

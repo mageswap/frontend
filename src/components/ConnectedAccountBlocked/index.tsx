@@ -42,13 +42,13 @@ export default function ConnectedAccountBlocked(props: ConnectedAccountBlockedPr
         </ThemedText.DeprecatedMain>
 
         <CopyHelper
-          toCopy="compliance@uniswap.org"
+          toCopy="compliance@mageswap.org"
           fontSize={14}
           iconSize={16}
           color={theme.accentAction}
           iconPosition="right"
         >
-          compliance@uniswap.org
+          compliance@mageswap.org
         </CopyHelper>
       </ContentWrapper>
     </Modal>

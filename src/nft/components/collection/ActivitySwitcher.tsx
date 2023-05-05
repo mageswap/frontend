@@ -1,5 +1,5 @@
-import { TraceEvent } from '@uniswap/analytics'
-import { BrowserEvent, InterfaceElementName, NFTEventName } from '@uniswap/analytics-events'
+import { TraceEvent } from '@mageswap/analytics'
+import { BrowserEvent, InterfaceElementName, NFTEventName } from '@mageswap/analytics-events'
 import { Box } from 'nft/components/Box'
 import { Row } from 'nft/components/Flex'
 import { useIsCollectionLoading } from 'nft/hooks'

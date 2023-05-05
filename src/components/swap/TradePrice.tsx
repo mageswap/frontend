@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { formatNumber, NumberType } from '@uniswap/conedison/format'
-import { Currency, Price } from '@uniswap/sdk-core'
+import { formatNumber, NumberType } from '@mageswap/conedison/format'
+import { Currency, Price } from '@mageswap/sdk-core'
 import { useUSDPrice } from 'hooks/useUSDPrice'
 import tryParseCurrencyAmount from 'lib/utils/tryParseCurrencyAmount'
 import { useCallback, useState } from 'react'

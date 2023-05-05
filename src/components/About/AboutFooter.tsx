@@ -1,5 +1,5 @@
-import { TraceEvent } from '@uniswap/analytics'
-import { BrowserEvent, InterfaceElementName, SharedEventName } from '@uniswap/analytics-events'
+import { TraceEvent } from '@mageswap/analytics'
+import { BrowserEvent, InterfaceElementName, SharedEventName } from '@mageswap/analytics-events'
 import styled from 'styled-components/macro'
 import { BREAKPOINTS, ExternalLink, StyledRouterLink } from 'theme'
 import { useIsDarkMode } from 'theme/components/ThemeToggle'

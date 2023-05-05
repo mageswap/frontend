@@ -7,7 +7,7 @@ test('hasURL', () => {
   expect(hasURL('https://uniswap.org')).toBe(true)
   expect(hasURL('https://www.uniswap.org')).toBe(true)
   expect(hasURL('http://uniswap.org')).toBe(true)
-  expect(hasURL('http://username:password@uniswap.org')).toBe(true)
+  expect(hasURL('http://username:password@mageswap.org')).toBe(true)
   expect(hasURL('http://app.uniswap.org')).toBe(true)
   expect(hasURL('username:password@app.uniswap.org:22')).toBe(true)
   expect(hasURL('uniswap.org:80')).toBe(true)

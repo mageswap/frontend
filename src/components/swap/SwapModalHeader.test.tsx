@@ -1,4 +1,4 @@
-import { sendAnalyticsEvent } from '@uniswap/analytics'
+import { sendAnalyticsEvent } from '@mageswap/analytics'
 import {
   TEST_ALLOWED_SLIPPAGE,
   TEST_RECIPIENT_ADDRESS,
@@ -10,7 +10,7 @@ import noop from 'utils/noop'
 
 import SwapModalHeader from './SwapModalHeader'
 
-jest.mock('@uniswap/analytics')
+jest.mock('@mageswap/analytics')
 const mockSendAnalyticsEvent = sendAnalyticsEvent as jest.MockedFunction<typeof sendAnalyticsEvent>
 
 describe('SwapModalHeader.tsx', () => {

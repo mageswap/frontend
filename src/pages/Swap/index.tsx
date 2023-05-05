@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { sendAnalyticsEvent, Trace, TraceEvent, useTrace } from '@uniswap/analytics'
+import { sendAnalyticsEvent, Trace, TraceEvent, useTrace } from '@mageswap/analytics'
 import {
   BrowserEvent,
   InterfaceElementName,
@@ -7,10 +7,10 @@ import {
   InterfacePageName,
   InterfaceSectionName,
   SwapEventName,
-} from '@uniswap/analytics-events'
-import { Trade } from '@uniswap/router-sdk'
-import { Currency, CurrencyAmount, Percent, Token, TradeType } from '@uniswap/sdk-core'
-import { UNIVERSAL_ROUTER_ADDRESS } from '@uniswap/universal-router-sdk'
+} from '@mageswap/analytics-events'
+import { Trade } from '@mageswap/router-sdk'
+import { Currency, CurrencyAmount, Percent, Token, TradeType } from '@mageswap/sdk-core'
+import { UNIVERSAL_ROUTER_ADDRESS } from '@mageswap/universal-router-sdk'
 import { useWeb3React } from '@web3-react/core'
 import { useToggleAccountDrawer } from 'components/AccountDrawer'
 import { sendEvent } from 'components/analytics'

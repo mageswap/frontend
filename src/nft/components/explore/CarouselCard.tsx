@@ -1,4 +1,4 @@
-import { formatNumberOrString, NumberType } from '@uniswap/conedison/format'
+import { formatNumberOrString, NumberType } from '@mageswap/conedison/format'
 import { loadingAnimation } from 'components/Loader/styled'
 import { LoadingBubble } from 'components/Tokens/loading'
 import { useCollection } from 'graphql/data/nft/Collection'

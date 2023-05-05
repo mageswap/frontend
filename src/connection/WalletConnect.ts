@@ -1,4 +1,4 @@
-import { sendAnalyticsEvent } from '@uniswap/analytics'
+import { sendAnalyticsEvent } from '@mageswap/analytics'
 import { URI_AVAILABLE, WalletConnect, WalletConnectConstructorArgs } from '@web3-react/walletconnect'
 import { isIOS } from 'utils/userAgent'
 

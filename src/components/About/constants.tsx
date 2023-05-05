@@ -1,4 +1,4 @@
-import { InterfaceElementName } from '@uniswap/analytics-events'
+import { InterfaceElementName } from '@mageswap/analytics-events'
 import { DollarSign, Terminal } from 'react-feather'
 import styled from 'styled-components/macro'
 import { lightTheme } from 'theme/colors'

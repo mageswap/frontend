@@ -2,7 +2,6 @@
 
 require('dotenv').config({ path: '.env.production' })
 const child_process = require('child_process')
-const fs = require('fs/promises')
 const { promisify } = require('util')
 const dataConfig = require('../graphql.config')
 const thegraphConfig = require('../graphql_thegraph.config')
@@ -15,7 +14,7 @@ function fetchSchema(url, outputFile) {
       if (stderr) {
         throw new Error(stderr)
       } else {
-        fs.writeFile(outputFile, stdout)
+        //        fs.writeFile(outputFile, stdout)
       }
     })
     .catch((err) => {
