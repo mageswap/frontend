@@ -23,6 +23,7 @@ export enum SupportedChainId {
   CELO_ALFAJORES = 44787,
 
   BNB = 56,
+  FANTOM = 250,
 }
 
 export const UniWalletSupportedChains = [
@@ -44,6 +45,7 @@ export const CHAIN_IDS_TO_NAMES = {
   [SupportedChainId.OPTIMISM]: 'optimism',
   [SupportedChainId.OPTIMISM_GOERLI]: 'optimism_goerli',
   [SupportedChainId.BNB]: 'bnb',
+  [SupportedChainId.FANTOM]: 'fantom_opera',
 }
 
 /**
@@ -97,6 +99,7 @@ export const L1_CHAIN_IDS = [
   SupportedChainId.CELO,
   SupportedChainId.CELO_ALFAJORES,
   SupportedChainId.BNB,
+  SupportedChainId.FANTOM,
 ] as const
 
 export type SupportedL1ChainId = typeof L1_CHAIN_IDS[number]
