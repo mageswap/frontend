@@ -39,7 +39,7 @@ const openAppStore = () => {
   window.open(APP_STORE_LINK, /* target = */ 'uniswap_wallet_appstore')
 }
 export const openWalletMicrosite = () => {
-  sendAnalyticsEvent(InterfaceEventName.UNISWAP_WALLET_MICROSITE_OPENED)
+  sendAnalyticsEvent(InterfaceEventName.MAGESWAP_WALLET_MICROSITE_OPENED)
   window.open(MICROSITE_LINK, /* target = */ 'uniswap_wallet_microsite')
 }
 

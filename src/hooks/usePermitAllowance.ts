@@ -25,7 +25,7 @@ export function usePermitAllowance(token?: Token, owner?: string, spender?: stri
   const [blocksPerFetch, setBlocksPerFetch] = useState<1>()
   const result = useSingleCallResult(contract, 'allowance', inputs, {
     blocksPerFetch,
-  }).result as Awaited<ReturnType<Permit2['allowance']>> | undefined
+  }).result as any | undefined
 
   const rawAmount = result?.amount.toString() // convert to a string before using in a hook, to avoid spurious rerenders
   const allowance = useMemo(

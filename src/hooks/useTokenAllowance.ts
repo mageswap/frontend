@@ -21,7 +21,7 @@ export function useTokenAllowance(
   // This guarantees that the tokenAllowance is marked isSyncing upon approval and updated upon being synced.
   const [blocksPerFetch, setBlocksPerFetch] = useState<1>()
   const { result, syncing: isSyncing } = useSingleCallResult(contract, 'allowance', inputs, { blocksPerFetch }) as {
-    result: Awaited<ReturnType<NonNullable<typeof contract>['allowance']>> | undefined
+    result: any | undefined
     syncing: boolean
   }
 

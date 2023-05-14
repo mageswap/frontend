@@ -1,7 +1,6 @@
 import { Currency, Ether, NativeCurrency, Token, WETH9 } from '@mageswap/sdk-core'
 import invariant from 'tiny-invariant'
 
-import { UNI_ADDRESS } from './addresses'
 import { SupportedChainId } from './chains'
 
 export const NATIVE_CHAIN_ID = 'NATIVE'
@@ -353,10 +352,28 @@ export const BUSD_BSC = new Token(
 )
 
 export const DAI_BSC = new Token(SupportedChainId.BNB, '0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3', 18, 'DAI', 'DAI')
-
 export const UNI: { [chainId: number]: Token } = {
-  [SupportedChainId.MAINNET]: new Token(SupportedChainId.MAINNET, UNI_ADDRESS[1], 18, 'UNI', 'Uniswap'),
-  [SupportedChainId.GOERLI]: new Token(SupportedChainId.GOERLI, UNI_ADDRESS[5], 18, 'UNI', 'Uniswap'),
+  [SupportedChainId.MAINNET]: new Token(
+    SupportedChainId.MAINNET,
+    '0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984',
+    18,
+    'UNI',
+    'Uniswap'
+  ),
+  [SupportedChainId.GOERLI]: new Token(
+    SupportedChainId.GOERLI,
+    '0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984',
+    18,
+    'UNI',
+    'Uniswap'
+  ),
+  [SupportedChainId.FANTOM]: new Token(
+    SupportedChainId.FANTOM,
+    '0x3edA36088b931098e8E472748840b3dF78268c72',
+    18,
+    'POTION',
+    'Potion'
+  ),
 }
 
 export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } = {

@@ -115,7 +115,7 @@ function InfoSection() {
         </ThemedText.Caption>
       </AutoColumn>
       <Column>
-        <DownloadButton element={InterfaceElementName.UNISWAP_WALLET_MODAL_DOWNLOAD_BUTTON} />
+        <DownloadButton element={InterfaceElementName.MAGESWAP_WALLET_MODAL_DOWNLOAD_BUTTON} />
       </Column>
     </InfoSectionWrapper>
   )

@@ -7,6 +7,7 @@ import bnbSquareLogoUrl from 'assets/svg/bnb_square_logo.svg'
 import bnbLogo from 'assets/svg/bnb-logo.svg'
 import celoLogo from 'assets/svg/celo_logo.svg'
 import celoSquareLogoUrl from 'assets/svg/celo_square_logo.svg'
+import fantomFTMLogo from 'assets/svg/fantom-ftm-logo.svg'
 import optimismSquareLogoUrl from 'assets/svg/optimism_square_logo.svg'
 import optimismLogoUrl from 'assets/svg/optimistic_ethereum.svg'
 import polygonSquareLogoUrl from 'assets/svg/polygon_square_logo.svg'
@@ -71,6 +72,17 @@ const CHAIN_INFO: ChainInfoMap = {
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     color: darkTheme.chain_1,
   },
+  [SupportedChainId.FANTOM]: {
+    networkType: NetworkType.L1,
+    docs: 'https://docs.fantom.foundation//',
+    explorer: 'https://ftmscan.com/',
+    infoLink: 'https://fantom.foundation',
+    label: 'Fantom',
+    logoUrl: fantomFTMLogo,
+    nativeCurrency: { name: 'Fantom', symbol: 'FTM', decimals: 18 },
+    color: darkTheme.chain_1,
+  },
+
   [SupportedChainId.GOERLI]: {
     networkType: NetworkType.L1,
     docs: 'https://docs.uniswap.org/',
