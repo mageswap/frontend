@@ -3915,10 +3915,9 @@
     "@mageswap/v3-periphery" "github:mageswap/v3-periphery"
     "@openzeppelin/contracts" "3.4.1-solc-0.7-2"
 
-"@mageswap/widgets@3.0.12":
-  version "3.0.12"
-  resolved "https://registry.yarnpkg.com/@mageswap/widgets/-/widgets-3.0.12.tgz#4701943c73383c7814d42835506dfca8697a2004"
-  integrity sha512-odVh3KNftN1VRpD4NfSk/xC5IlmbP5qXsi2f93aMDGmYiuGjkiu0ENSwF4TSg5E5fjpDFFkKFIstQkiDNAgGhg==
+"@mageswap/widgets@github:mageswap/widgets#main":
+  version "3.0.14"
+  resolved "https://codeload.github.com/mageswap/widgets/tar.gz/faa62ba2e070665b9eab332bb36418b03e2d74fa"
   dependencies:
     "@babel/preset-env" "^7.16.11"
     "@babel/runtime" ">=7.17.0"
