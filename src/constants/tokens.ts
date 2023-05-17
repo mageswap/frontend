@@ -483,6 +483,9 @@ class MaticNativeCurrency extends NativeCurrency {
 function isBsc(chainId: number): chainId is SupportedChainId.BNB {
   return chainId === SupportedChainId.BNB
 }
+function isFtm(chainId: number): chainId is SupportedChainId.FANTOM {
+  return chainId === SupportedChainId.FANTOM
+}
 
 class BscNativeCurrency extends NativeCurrency {
   equals(other: Currency): boolean {
@@ -499,6 +502,24 @@ class BscNativeCurrency extends NativeCurrency {
   public constructor(chainId: number) {
     if (!isBsc(chainId)) throw new Error('Not bnb')
     super(chainId, 18, 'BNB', 'BNB')
+  }
+}
+
+class FtmNativeCurrency extends NativeCurrency {
+  equals(other: Currency): boolean {
+    return other.isNative && other.chainId === this.chainId
+  }
+
+  get wrapped(): Token {
+    if (!isFtm(this.chainId)) throw new Error('Not ftm')
+    const wrapped = WRAPPED_NATIVE_CURRENCY[this.chainId]
+    invariant(wrapped instanceof Token)
+    return wrapped
+  }
+
+  public constructor(chainId: number) {
+    if (!isFtm(chainId)) throw new Error('Not ftm')
+    super(chainId, 18, 'FTM', 'FTM')
   }
 }
 
@@ -526,6 +547,8 @@ export function nativeOnChain(chainId: number): NativeCurrency | Token {
     nativeCurrency = getCeloNativeCurrency(chainId)
   } else if (isBsc(chainId)) {
     nativeCurrency = new BscNativeCurrency(chainId)
+  } else if (isFtm(chainId)) {
+    nativeCurrency = new FtmNativeCurrency(chainId)
   } else {
     nativeCurrency = ExtendedEther.onChain(chainId)
   }

@@ -3838,9 +3838,22 @@
   version "1.0.0-beta.31"
   resolved "https://codeload.github.com/mageswap/token-lists/tar.gz/1273b08ed2fca2efcad5920a9169eda7a2aeb335"
 
-"@mageswap/universal-router-sdk@github:mageswap/universal-router-sdk", "@mageswap/universal-router-sdk@github:mageswap/universal-router-sdk#main":
+"@mageswap/universal-router-sdk@github:mageswap/universal-router-sdk":
   version "1.5.0-beta.1"
   resolved "https://codeload.github.com/mageswap/universal-router-sdk/tar.gz/f03be4e1f0be07aa2a65cf0416e7ed5c52b5cece"
+  dependencies:
+    "@mageswap/permit2-sdk" "github:mageswap/permit2-sdk"
+    "@mageswap/router-sdk" "github:mageswap/router-sdk"
+    "@mageswap/sdk-core" "github:mageswap/sdk-core"
+    "@mageswap/universal-router" "github:mageswap/universal-router"
+    "@mageswap/v2-sdk" "github:mageswap/v2-sdk"
+    "@mageswap/v3-sdk" "github:mageswap/v3-sdk"
+    bignumber.js "^9.0.2"
+    ethers "^5.3.1"
+
+"@mageswap/universal-router-sdk@github:mageswap/universal-router-sdk#main":
+  version "1.5.1"
+  resolved "https://codeload.github.com/mageswap/universal-router-sdk/tar.gz/da3aef80e24f09041f63648a673641da58806fcb"
   dependencies:
     "@mageswap/permit2-sdk" "github:mageswap/permit2-sdk"
     "@mageswap/router-sdk" "github:mageswap/router-sdk"
