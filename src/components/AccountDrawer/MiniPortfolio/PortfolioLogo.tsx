@@ -85,7 +85,7 @@ const L2LogoContainer = styled.div<{ $backgroundColor?: string }>`
  * Renders an image by prioritizing a list of sources, and then eventually a fallback triangle alert
  */
 export function PortfolioLogo({
-  chainId = SupportedChainId.MAINNET,
+  chainId = SupportedChainId.FANTOM,
   accountAddress,
   currencies,
   images,
@@ -96,7 +96,6 @@ export function PortfolioLogo({
   const chainLogo = squareLogoUrl ?? logoUrl
   const { avatar, loading } = useENSAvatar(accountAddress, false)
   const theme = useTheme()
-
   const [src, nextSrc] = useTokenLogoSource(currencies?.[0]?.wrapped.address, chainId, currencies?.[0]?.isNative)
   const [src2, nextSrc2] = useTokenLogoSource(currencies?.[1]?.wrapped.address, chainId, currencies?.[1]?.isNative)
 

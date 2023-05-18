@@ -93,7 +93,7 @@ const DetailsContainer = ({ asset, collection }: { asset: GenieAsset; collection
         body={
           creator?.address && (
             <CreatorLink
-              href={`https://etherscan.io/address/${creator.address}`}
+              href={`https://ftmscan.com/address/${creator.address}`}
               rel="noopener noreferrer"
               target="_blank"
             >

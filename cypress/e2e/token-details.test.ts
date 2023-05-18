@@ -30,7 +30,7 @@ describe('Token details', () => {
 
     // Links section should link out to Etherscan, More analytics, Website, Twitter
     cy.get('[data-cy="resources-container"]').within(() => {
-      cy.contains('Etherscan').should('have.attr', 'href').and('include', `etherscan.io/address/${UNI_ADDRESS}`)
+      cy.contains('Etherscan').should('have.attr', 'href').and('include', `ftmscan.com/address/${UNI_ADDRESS}`)
       cy.contains('More analytics')
         .should('have.attr', 'href')
         .and('include', `info.uniswap.org/#/tokens/${UNI_ADDRESS}`)
@@ -67,7 +67,7 @@ describe('Token details', () => {
     cy.get('[data-cy="resources-container"]').within(() => {
       cy.contains('Etherscan')
         .should('have.attr', 'href')
-        .and('include', 'etherscan.io/address/0xa71d0588EAf47f12B13cF8eC750430d21DF04974')
+        .and('include', 'ftmscan.com/address/0xa71d0588EAf47f12B13cF8eC750430d21DF04974')
       cy.contains('More analytics')
         .should('have.attr', 'href')
         .and('include', 'info.uniswap.org/#/tokens/0xa71d0588EAf47f12B13cF8eC750430d21DF04974')

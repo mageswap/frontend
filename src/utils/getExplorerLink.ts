@@ -1,10 +1,10 @@
 import { SupportedChainId } from 'constants/chains'
 
 const BLOCK_EXPLORER_PREFIXES: { [chainId: number]: string } = {
-  [SupportedChainId.MAINNET]: 'https://etherscan.io',
-  [SupportedChainId.GOERLI]: 'https://goerli.etherscan.io',
-  [SupportedChainId.OPTIMISM]: 'https://optimistic.etherscan.io',
-  [SupportedChainId.OPTIMISM_GOERLI]: 'https://goerli-optimism.etherscan.io',
+  [SupportedChainId.MAINNET]: 'https://ftmscan.com',
+  [SupportedChainId.GOERLI]: 'https://goerli.ftmscan.com',
+  [SupportedChainId.OPTIMISM]: 'https://optimistic.ftmscan.com',
+  [SupportedChainId.OPTIMISM_GOERLI]: 'https://goerli-optimism.ftmscan.com',
   [SupportedChainId.POLYGON]: 'https://polygonscan.com',
   [SupportedChainId.POLYGON_MUMBAI]: 'https://mumbai.polygonscan.com',
   [SupportedChainId.CELO]: 'https://celoscan.io',
@@ -54,7 +54,7 @@ export function getExplorerLink(chainId: number, data: string, type: ExplorerDat
     }
   }
 
-  const prefix = BLOCK_EXPLORER_PREFIXES[chainId] ?? 'https://etherscan.io'
+  const prefix = BLOCK_EXPLORER_PREFIXES[chainId] ?? 'https://ftmscan.com'
 
   switch (type) {
     case ExplorerDataType.TRANSACTION:

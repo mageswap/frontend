@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unused-modules */
 import { Currency, Ether, NativeCurrency, Token, WETH9 } from '@mageswap/sdk-core'
 import invariant from 'tiny-invariant'
 
@@ -350,6 +351,20 @@ export const BUSD_BSC = new Token(
   'BUSD',
   'BUSD'
 )
+export const POTION_FTM = new Token(
+  SupportedChainId.FANTOM,
+  '0x3edA36088b931098e8E472748840b3dF78268c72',
+  18,
+  'POTION',
+  'Potion'
+)
+export const USDC_FTM = new Token(
+  SupportedChainId.FANTOM,
+  '0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+  6,
+  'USDC',
+  'USDC'
+)
 
 export const DAI_BSC = new Token(SupportedChainId.BNB, '0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3', 18, 'DAI', 'DAI')
 export const UNI: { [chainId: number]: Token } = {
@@ -366,13 +381,6 @@ export const UNI: { [chainId: number]: Token } = {
     18,
     'UNI',
     'Uniswap'
-  ),
-  [SupportedChainId.FANTOM]: new Token(
-    SupportedChainId.FANTOM,
-    '0x3edA36088b931098e8E472748840b3dF78268c72',
-    18,
-    'POTION',
-    'Potion'
   ),
 }
 
@@ -440,6 +448,13 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } =
     18,
     'WBNB',
     'Wrapped BNB'
+  ),
+  [SupportedChainId.FANTOM]: new Token(
+    SupportedChainId.FANTOM,
+    '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
+    18,
+    'WFTM',
+    'Wrapped FTM'
   ),
 }
 
@@ -527,6 +542,8 @@ class ExtendedEther extends Ether {
   public get wrapped(): Token {
     const wrapped = WRAPPED_NATIVE_CURRENCY[this.chainId]
     if (wrapped) return wrapped
+
+    console.log(this.chainId, WRAPPED_NATIVE_CURRENCY[250])
     throw new Error(`Unsupported chain ID: ${this.chainId}`)
   }
 

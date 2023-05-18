@@ -419,7 +419,7 @@ export const AssetPriceDetails = ({ asset, collection }: AssetPriceDetailsProps)
           )}
           <OwnerText
             target="_blank"
-            href={`https://etherscan.io/address/${asset.ownerAddress}`}
+            href={`https://ftmscan.com/address/${asset.ownerAddress}`}
             rel="noopener noreferrer"
           >
             {asset.tokenType === 'ERC1155' ? (

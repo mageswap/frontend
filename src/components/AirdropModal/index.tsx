@@ -257,7 +257,7 @@ const AirdropModal = () => {
               <SuccessText>
                 You have successfully claimed {totalAmount} USDC. Thank you for supporting Genie.xyz.
               </SuccessText>
-              <EtherscanLink href={`https://etherscan.io/tx/${hash}`} target="_blank">
+              <EtherscanLink href={`https://ftmscan.com/tx/${hash}`} target="_blank">
                 <ThemedText.Link>
                   <EtherscanLinkWrap>
                     <span>Etherscan</span>

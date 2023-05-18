@@ -423,7 +423,7 @@ export const AssetDetails = ({ asset, collection }: AssetDetailsProps) => {
           <ByText>By </ByText>
           {asset?.creator && asset.creator?.address && (
             <AddressTextLink
-              href={`https://etherscan.io/address/${asset.creator.address}`}
+              href={`https://ftmscan.com/address/${asset.creator.address}`}
               target="_blank"
               rel="noopener noreferrer"
             >

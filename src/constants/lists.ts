@@ -1,4 +1,5 @@
-export const UNI_LIST = 'https://gateway.ipfs.io/ipns/tokens.uniswap.org'
+export const UNI_LIST =
+  'https://raw.githubusercontent.com/mageswap/default-token-list/main/build/mageswap-default.tokenlist.json'
 export const UNI_EXTENDED_LIST = 'https://gateway.ipfs.io/ipns/extendedtokens.uniswap.org'
 const UNI_UNSUPPORTED_LIST = 'https://gateway.ipfs.io/ipns/unsupportedtokens.uniswap.org'
 const AAVE_LIST = 'tokenlist.aave.eth'

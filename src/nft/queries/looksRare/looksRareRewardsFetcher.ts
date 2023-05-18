@@ -1,6 +1,6 @@
 import { LooksRareRewardsData } from '../../types'
 
-const looksRareApiAddress = 'https://api.looksrare.org/api/v1'
+const looksRareApiAddress = 'https://api.looksrare.org/api/v2'
 
 export const looksRareRewardsFetcher = async (address: any): Promise<LooksRareRewardsData | string> => {
   const res = await fetch(`${looksRareApiAddress}/rewards?address=${address}`)

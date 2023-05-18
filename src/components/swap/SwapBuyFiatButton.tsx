@@ -99,11 +99,7 @@ export default function SwapBuyFiatButton() {
     }
   }, [account, handleBuyCrypto, buyFiatFlowState, fiatOnrampAvailabilityChecked])
 
-  const buyCryptoButtonDisabled =
-    (!fiatOnrampAvailable && fiatOnrampAvailabilityChecked) ||
-    fiatOnrampAvailabilityLoading ||
-    // When wallet drawer is open AND user is in the connect wallet step of the buy fiat flow, disable buy fiat button.
-    (walletDrawerOpen && buyFiatFlowState === BuyFiatFlowState.ACTIVE_NEEDS_ACCOUNT)
+  const buyCryptoButtonDisabled = true
 
   const fiatOnRampsUnavailableTooltipDisabled =
     !fiatOnrampAvailabilityChecked || (fiatOnrampAvailabilityChecked && fiatOnrampAvailable)

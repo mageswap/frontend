@@ -27,6 +27,7 @@ import {
   nativeOnChain,
   PORTAL_ETH_CELO,
   PORTAL_USDC_CELO,
+  POTION_FTM,
   renBTC,
   rETH2,
   sETH2,
@@ -35,6 +36,7 @@ import {
   USDC_ARBITRUM,
   USDC_ARBITRUM_GOERLI,
   USDC_BSC,
+  USDC_FTM,
   USDC_MAINNET,
   USDC_OPTIMISM,
   USDC_POLYGON,
@@ -204,6 +206,7 @@ export const COMMON_BASES: ChainCurrencyList = {
     BTC_BSC,
     BUSD_BSC,
   ],
+  [SupportedChainId.FANTOM]: [nativeOnChain(SupportedChainId.FANTOM), USDC_FTM, POTION_FTM],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend

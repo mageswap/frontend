@@ -31,6 +31,7 @@ export const UniWalletSupportedChains = [
   SupportedChainId.ARBITRUM_ONE,
   SupportedChainId.OPTIMISM,
   SupportedChainId.POLYGON,
+  SupportedChainId.FANTOM,
 ]
 
 export const CHAIN_IDS_TO_NAMES = {
@@ -45,7 +46,7 @@ export const CHAIN_IDS_TO_NAMES = {
   [SupportedChainId.OPTIMISM]: 'optimism',
   [SupportedChainId.OPTIMISM_GOERLI]: 'optimism_goerli',
   [SupportedChainId.BNB]: 'bnb',
-  [SupportedChainId.FANTOM]: 'fantom_opera',
+  [SupportedChainId.FANTOM]: 'fantom',
 }
 
 /**

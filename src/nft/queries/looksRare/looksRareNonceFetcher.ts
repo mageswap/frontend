@@ -1,4 +1,4 @@
-const looksRareApiAddress = 'https://api.looksrare.org/api/v1'
+const looksRareApiAddress = 'https://api.looksrare.org/api/v2'
 
 export const looksRareNonceFetcher = async (address: any): Promise<number | undefined> => {
   const res = await fetch(`${looksRareApiAddress}/orders/nonce?address=${address}`)
