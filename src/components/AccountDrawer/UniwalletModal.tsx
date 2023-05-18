@@ -12,7 +12,7 @@ import { UniwalletConnect } from 'connection/WalletConnect'
 import { QRCodeSVG } from 'qrcode.react'
 import { useEffect, useState } from 'react'
 import styled, { useTheme } from 'styled-components/macro'
-import { CloseIcon, ThemedText } from 'theme'
+import { ThemedText } from 'theme'
 
 import uniPng from '../../assets/images/uniwallet_modal_icon.png'
 import { DownloadButton } from './DownloadButton'
@@ -64,12 +64,12 @@ export default function UniwalletModal() {
   return (
     <Modal isOpen={open} onDismiss={cancelActivation}>
       <UniwalletConnectWrapper>
-        <HeaderRow>
+        {/* <HeaderRow>
           <ThemedText.SubHeader>
             <Trans>Scan with Uniswap Wallet</Trans>
           </ThemedText.SubHeader>
           <CloseIcon onClick={cancelActivation} />
-        </HeaderRow>
+        </HeaderRow> */}
         <QRCodeWrapper>
           {uri && (
             <QRCodeSVG

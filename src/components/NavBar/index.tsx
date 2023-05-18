@@ -116,13 +116,11 @@ const Navbar = ({ blur }: { blur: boolean }) => {
                 <ChainSelector leftAlign={true} />
               </Box>
             )}
-            <Row display={{ sm: 'none', lg: 'flex' }}>
-              <PageTabs />
-            </Row>
+            <PageTabs />
           </Box>
-          <Box className={styles.searchContainer}>
+          {/* <Box className={styles.searchContainer}>
             <SearchBar />
-          </Box>
+          </Box> */}
           <Box className={styles.rightSideContainer}>
             <Row gap="12">
               <Box position="relative" display={{ sm: 'flex', navSearchInputVisible: 'none' }}>

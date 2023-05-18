@@ -103,7 +103,7 @@ export default function SwapBuyFiatButton() {
 
   const fiatOnRampsUnavailableTooltipDisabled =
     !fiatOnrampAvailabilityChecked || (fiatOnrampAvailabilityChecked && fiatOnrampAvailable)
-
+  return <></>
   return (
     <MouseoverTooltipContent
       wrap

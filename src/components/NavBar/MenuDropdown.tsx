@@ -1,13 +1,10 @@
 import { t, Trans } from '@lingui/macro'
-import { InterfaceElementName } from '@mageswap/analytics-events'
-import { openDownloadApp } from 'components/AccountDrawer/DownloadButton'
 import FeatureFlagModal from 'components/FeatureFlagModal/FeatureFlagModal'
 import { PrivacyPolicyModal } from 'components/PrivacyPolicy'
 import { useOnClickOutside } from 'hooks/useOnClickOutside'
 import { Box } from 'nft/components/Box'
 import { Column, Row } from 'nft/components/Flex'
 import {
-  BarChartIcon,
   DiscordIconMenu,
   EllipsisIcon,
   GithubIconMenu,
@@ -23,7 +20,6 @@ import { useToggleModal } from 'state/application/hooks'
 import styled, { useTheme } from 'styled-components/macro'
 import { isDevelopmentEnv, isStagingEnv } from 'utils/env'
 
-import { ReactComponent as AppleLogo } from '../../assets/svg/apple_logo.svg'
 import { ApplicationModal } from '../../state/application/reducer'
 import * as styles from './MenuDropdown.css'
 import { NavDropdown } from './NavDropdown'
@@ -128,118 +124,5 @@ export const MenuDropdown = () => {
   const openFeatureFlagsModal = useToggleModal(ApplicationModal.FEATURE_FLAGS)
   const ref = useRef<HTMLDivElement>(null)
   useOnClickOutside(ref, isOpen ? toggleOpen : undefined)
-
-  return (
-    <>
-      <Box position="relative" ref={ref}>
-        <NavIcon isActive={isOpen} onClick={toggleOpen} label={isOpen ? t`Show resources` : t`Hide resources`}>
-          <EllipsisIcon viewBox="0 0 20 20" width={24} height={24} />
-        </NavIcon>
-
-        {isOpen && (
-          <NavDropdown top={{ sm: 'unset', lg: '56' }} bottom={{ sm: '56', lg: 'unset' }} right="0">
-            <Column gap="16">
-              <Column paddingX="8" gap="4">
-                <Box display={{ sm: 'none', lg: 'flex', xxl: 'none' }}>
-                  <PrimaryMenuRow to="/pool" close={toggleOpen}>
-                    <Icon>
-                      <PoolIcon width={24} height={24} fill={theme.textPrimary} />
-                    </Icon>
-                    <PrimaryMenuRow.Text>
-                      <Trans>Pool</Trans>
-                    </PrimaryMenuRow.Text>
-                  </PrimaryMenuRow>
-                </Box>
-                <Box onClick={() => openDownloadApp(InterfaceElementName.MAGESWAP_WALLET_MODAL_DOWNLOAD_BUTTON)}>
-                  <PrimaryMenuRow close={toggleOpen}>
-                    <Icon>
-                      <AppleLogo width="24px" height="24px" fill={theme.textPrimary} />
-                    </Icon>
-                    <PrimaryMenuRow.Text>
-                      <Trans>Download Uniswap Wallet</Trans>
-                    </PrimaryMenuRow.Text>
-                  </PrimaryMenuRow>
-                </Box>
-                <PrimaryMenuRow to="/vote" close={toggleOpen}>
-                  <Icon>
-                    <GovernanceIcon width={24} height={24} color={theme.textPrimary} />
-                  </Icon>
-                  <PrimaryMenuRow.Text>
-                    <Trans>Vote in governance</Trans>
-                  </PrimaryMenuRow.Text>
-                </PrimaryMenuRow>
-                <PrimaryMenuRow href="https://info.uniswap.org/#/">
-                  <Icon>
-                    <BarChartIcon width={24} height={24} color={theme.textPrimary} />
-                  </Icon>
-                  <PrimaryMenuRow.Text>
-                    <Trans>View more analytics</Trans>
-                  </PrimaryMenuRow.Text>
-                </PrimaryMenuRow>
-              </Column>
-              <Separator />
-              <Box
-                display="flex"
-                flexDirection={{ sm: 'row', md: 'column' }}
-                flexWrap="wrap"
-                alignItems={{ sm: 'center', md: 'flex-start' }}
-                paddingX="8"
-              >
-                <SecondaryLinkedText href="https://help.uniswap.org/en/">
-                  <Trans>Help center</Trans> ↗
-                </SecondaryLinkedText>
-                <SecondaryLinkedText href="https://docs.uniswap.org/">
-                  <Trans>Documentation</Trans> ↗
-                </SecondaryLinkedText>
-                <SecondaryLinkedText href="https://uniswap.canny.io/feature-requests">
-                  <Trans>Feedback</Trans> ↗
-                </SecondaryLinkedText>
-                <SecondaryLinkedText
-                  onClick={() => {
-                    toggleOpen()
-                    togglePrivacyPolicy()
-                  }}
-                >
-                  <Trans>Legal & Privacy</Trans> ↗
-                </SecondaryLinkedText>
-                {(isDevelopmentEnv() || isStagingEnv()) && (
-                  <SecondaryLinkedText onClick={openFeatureFlagsModal}>
-                    <Trans>Feature Flags</Trans>
-                  </SecondaryLinkedText>
-                )}
-              </Box>
-              <IconRow>
-                <Icon href="https://discord.com/invite/FCfyBSbCU5">
-                  <DiscordIconMenu
-                    className={styles.hover}
-                    width={24}
-                    height={24}
-                    color={themeVars.colors.textSecondary}
-                  />
-                </Icon>
-                <Icon href="https://twitter.com/Uniswap">
-                  <TwitterIconMenu
-                    className={styles.hover}
-                    width={24}
-                    height={24}
-                    color={themeVars.colors.textSecondary}
-                  />
-                </Icon>
-                <Icon href="https://github.com/Uniswap">
-                  <GithubIconMenu
-                    className={styles.hover}
-                    width={24}
-                    height={24}
-                    color={themeVars.colors.textSecondary}
-                  />
-                </Icon>
-              </IconRow>
-            </Column>
-          </NavDropdown>
-        )}
-      </Box>
-      <PrivacyPolicyModal />
-      <FeatureFlagModal />
-    </>
-  )
+  return <></>
 }

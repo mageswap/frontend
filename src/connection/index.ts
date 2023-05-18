@@ -106,7 +106,7 @@ const [web3CoinbaseWallet, web3CoinbaseWalletHooks] = initializeConnector<Coinba
       actions,
       options: {
         url: RPC_URLS[SupportedChainId.MAINNET][0],
-        appName: 'Uniswap',
+        appName: 'Mageswap',
         appLogoUrl: UNISWAP_LOGO,
         reloadOnDisconnect: false,
       },
@@ -134,7 +134,6 @@ const coinbaseWalletConnection: Connection = {
 
 export function getConnections() {
   return [
-    uniwalletConnectConnection,
     injectedConnection,
     walletConnectConnection,
     coinbaseWalletConnection,

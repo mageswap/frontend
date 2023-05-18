@@ -65,9 +65,5 @@ export function DownloadButton({
     openDownloadApp(element)
   }, [element, onClick])
 
-  return (
-    <BaseButton branded onClick={onButtonClick}>
-      {text}
-    </BaseButton>
-  )
+  return <></>
 }
