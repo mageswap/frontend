@@ -11,7 +11,9 @@ type SVGProps = React.SVGProps<SVGSVGElement> & {
   gradientId?: string
 }
 
-export const UniIcon = (props: SVGProps) => <img src="https://riotgoools.com/img/lnk/potion.png" />
+export const UniIcon = (props: SVGProps) => (
+  <img width="100" src="https://github.com/lilesper/lilesper.github.io/blob/main/assets/images/IMG_1606.gif?raw=true" />
+)
 
 export const ChevronUpIcon = ({
   secondaryColor,
