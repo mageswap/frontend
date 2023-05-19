@@ -3823,8 +3823,8 @@
     stats-lite "^2.2.0"
 
 "@mageswap/smart-order-router@github:mageswap/smart-order-router#main":
-  version "3.11.3"
-  resolved "https://codeload.github.com/mageswap/smart-order-router/tar.gz/405f377a275868da4744877509afbfcf64c72ab3"
+  version "3.11.5"
+  resolved "https://codeload.github.com/mageswap/smart-order-router/tar.gz/2ca95feb62149bcda837a96fc26981e95c822214"
   dependencies:
     "@mageswap/default-token-list" "github:mageswap/default-token-list"
     "@mageswap/permit2-sdk" "github:mageswap/permit2-sdk"

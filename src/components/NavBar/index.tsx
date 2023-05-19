@@ -6,7 +6,6 @@ import { useIsNftPage } from 'hooks/useIsNftPage'
 import { useIsPoolsPage } from 'hooks/useIsPoolsPage'
 import { useAtomValue } from 'jotai/utils'
 import { Box } from 'nft/components/Box'
-import { Row } from 'nft/components/Flex'
 import { UniIcon } from 'nft/components/icons'
 import { useProfilePageState } from 'nft/hooks'
 import { ProfilePageStateType } from 'nft/types'
@@ -118,23 +117,21 @@ const Navbar = ({ blur }: { blur: boolean }) => {
             )}
             <PageTabs />
           </Box>
-          {/* <Box className={styles.searchContainer}>
+          <Box className={styles.searchContainer}>
             <SearchBar />
-          </Box> */}
+          </Box>
           <Box className={styles.rightSideContainer}>
-            <Row gap="12">
-              <Box position="relative" display={{ sm: 'flex', navSearchInputVisible: 'none' }}>
-                <SearchBar />
+            <Box position="relative" display={{ sm: 'flex', navSearchInputVisible: 'none' }}>
+              <SearchBar />
+            </Box>
+            {isNftPage && sellPageState !== ProfilePageStateType.LISTING && <Bag />}
+            {!isNftPage && (
+              <Box display={{ sm: 'none', lg: 'flex' }}>
+                <ChainSelector />
               </Box>
-              {isNftPage && sellPageState !== ProfilePageStateType.LISTING && <Bag />}
-              {!isNftPage && (
-                <Box display={{ sm: 'none', lg: 'flex' }}>
-                  <ChainSelector />
-                </Box>
-              )}
+            )}
 
-              <Web3Status />
-            </Row>
+            <Web3Status />
           </Box>
         </Box>
       </Nav>

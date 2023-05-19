@@ -43,16 +43,18 @@ export function getNativeLogoURI(chainId: SupportedChainId = SupportedChainId.MA
   }
 }
 
-function getTokenLogoURI(address: string, chainId: SupportedChainId = SupportedChainId.MAINNET): string | void {
+function getTokenLogoURI(address: string, chainId: SupportedChainId = SupportedChainId.FANTOM): string | void {
   const networkName = chainIdToNetworkName(chainId)
   const networksWithUrls = [
     SupportedChainId.ARBITRUM_ONE,
     SupportedChainId.MAINNET,
     SupportedChainId.OPTIMISM,
     SupportedChainId.BNB,
+    SupportedChainId.FANTOM,
   ]
+  console.log(chainId)
   if (networksWithUrls.includes(chainId)) {
-    return `https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/${networkName}/assets/${address}/logo.png`
+    return `https://raw.githubusercontent.com/mageswap/assets/master/blockchains/${networkName}/assets/${address}/logo.png`
   }
 
   // Celo logo logo is hosted elsewhere.

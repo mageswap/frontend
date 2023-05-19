@@ -685,7 +685,7 @@ exports[`SwapDetailsDropdown.tsx renders a trade 1`] = `
                           <img
                             alt="ABC logo"
                             class="c29"
-                            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
+                            src="https://raw.githubusercontent.com/mageswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
                           />
                         </div>
                         <div
@@ -746,7 +746,7 @@ exports[`SwapDetailsDropdown.tsx renders a trade 1`] = `
                                           <img
                                             alt="DEF logo"
                                             class="c29"
-                                            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
+                                            src="https://raw.githubusercontent.com/mageswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
                                           />
                                         </div>
                                       </div>
@@ -759,7 +759,7 @@ exports[`SwapDetailsDropdown.tsx renders a trade 1`] = `
                                           <img
                                             alt="ABC logo"
                                             class="c29"
-                                            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
+                                            src="https://raw.githubusercontent.com/mageswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
                                           />
                                         </div>
                                       </div>
@@ -781,7 +781,7 @@ exports[`SwapDetailsDropdown.tsx renders a trade 1`] = `
                           <img
                             alt="DEF logo"
                             class="c29"
-                            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
+                            src="https://raw.githubusercontent.com/mageswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
                           />
                         </div>
                       </div>
